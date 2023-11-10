@@ -30,7 +30,7 @@ install(TARGETS blst
 )
 
 # Define where the headers for the library are
-install(FILES ${PROJECT_SOURCE_DIR}/src/blst_t.hpp ${PROJECT_SOURCE_DIR}/src/bytes.h ${PROJECT_SOURCE_DIR}/src/vect.h DESTINATION include/blst)
+install(FILES ${PROJECT_SOURCE_DIR}/include/blst_t.hpp ${PROJECT_SOURCE_DIR}/include/bytes.h ${PROJECT_SOURCE_DIR}/include/vect.h DESTINATION include/blst)
 
 # Configure the install script to use 'ldconfig' to update the shared library cache
 install(CODE "execute_process(COMMAND ldconfig)")
